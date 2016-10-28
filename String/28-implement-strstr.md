@@ -8,6 +8,10 @@ grammar_cjkRuby: true
 # 问题描述
 对于一个给定的 source 字符串和一个 target 字符串，你应该在 source 字符串中找出 target 字符串出现的第一个位置(从0开始)。如果不存在，则返回 -1。
 
+[Implement strStr() | LeetCode OJ](https://leetcode.com/problems/implement-strstr/)
+
+
+
 # 说明
 在面试中是否需要实现KMP算法？
 
