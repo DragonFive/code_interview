@@ -4,7 +4,7 @@ Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
 ## 结构
 
 ### string 字符串
-
+28. Implement strStr()  实现找字串功能
 
 
 
