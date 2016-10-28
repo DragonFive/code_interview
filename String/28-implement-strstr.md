@@ -10,7 +10,7 @@ grammar_cjkRuby: true
 
 [Implement strStr() | LeetCode OJ](https://leetcode.com/problems/implement-strstr/)
 
-
+[字符串查找 lintcode](http://www.lintcode.com/zh-cn/problem/strstr/)
 
 # 说明
 在面试中是否需要实现KMP算法？
