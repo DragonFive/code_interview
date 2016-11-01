@@ -2,7 +2,7 @@
 
 # 字符串匹配
 
-[从头到尾彻底理解KMP（2014年8月22日版） - 结构之法 算法之道 ](http://blog.csdn.net/v_july_v/article/details/7041827)
+
 
 
 28-implement-strstr使用的是暴力匹配的方法 
@@ -123,3 +123,7 @@ int KmpSearch(char* s, char* p)
         return -1;  
 }  
 ```
+
+## 参考资料 
+
+[从头到尾彻底理解KMP（2014年8月22日版） - 结构之法 算法之道 ](http://blog.csdn.net/v_july_v/article/details/7041827)
