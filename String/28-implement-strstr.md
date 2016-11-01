@@ -19,8 +19,51 @@ grammar_cjkRuby: true
 
 # 实现 
 
-## python 暴力匹配法
+## 使用库函数 
+
+```cpp
+#include<string>
+
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        int where = haystack.find(needle);
+        if(where!=haystack.npos)
+            return where;
+        else
+            return -1;
+    }
+};
 ```
+
+
+##  暴力匹配法
+```cpp
+#include<string>
+
+class Solution {
+public:
+    int strStr(string s, string t) 
+    {
+        int i=0;
+        for(;i<int(s.length()-t.length())+1;i++)
+        {
+        	int j=0;
+        	for(;j<t.length();j++)
+        	{
+        		if(s[i+j] != t[j])
+        			break;
+    		}
+    		if(j == t.length())
+    			return i;
+    	}
+    	return -1;
+            
+    }
+};
+```
+
+```python
 class Solution:
     def strStr(self, source, target):
         # write your code here
@@ -34,3 +77,6 @@ class Solution:
                 return i
         return -1
   ```
+  
+  
+  
