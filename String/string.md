@@ -93,7 +93,7 @@ void GetNextval(char* p, int next[])
 ```
 
 ## KMP算法代码
-
+时间复杂度为O(m+n)
 ```
 
 int KmpSearch(char* s, char* p)  
