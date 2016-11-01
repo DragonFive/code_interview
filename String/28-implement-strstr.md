@@ -46,7 +46,7 @@ public:
     int strStr(string s, string t) 
     {
         int i=0;
-        for(;i<int(s.length()-t.length())+1;i++)
+        for(;i<int(s.length()-t.length())+1;i++)//这里要注意长度
         {
         	int j=0;
         	for(;j<t.length();j++)
@@ -78,5 +78,62 @@ class Solution:
         return -1
   ```
   
+  ## 优化后的KMP算法
+  
+  ```cpp
+  void getNext(string t, int next[])
+{
+	next[0] = -1;
+	
+	int k = -1, j = 0, lent = t.size();
+	
+	while (j < lent - 1)
+	{
+		if (k == -1 || t[j] == t[k])
+		{
+			k++; j++;
+			if (t[j] == t[k])
+				next[j] = next[k];
+			else
+				next[j] = k;
+		}
+		else
+			k = next[k];
+	}
+}
+int strStr(string s, string t)
+{
+	if (s.empty() && t.empty())
+		return 0;
+	if (t.empty())
+	    return 0;
+	if (s.size() < t.size())
+		return -1;
+	
+	int * next = new int[t.size()];
+	getNext(t, next);
+
+	//string::size_type ids = 0, idt = 0;//这里idt不能用size_type类型 因为可能为-1
+	int ids = 0, idt = 0;
+	int lens = s.size(), lent = t.size();
+	while (ids < lens && idt < lent)
+	{
+		if (idt == -1 || s[ids] == t[idt])
+		{
+			ids++; idt++;
+		}
+		else
+			idt = next[idt];
+	}
+
+	delete[] next;
+	if (idt == t.size())
+		return ids - idt;
+	return -1;
+
+
+
+}
+  ```
   
   
