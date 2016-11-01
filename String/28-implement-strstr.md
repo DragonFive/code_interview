@@ -19,7 +19,7 @@ grammar_cjkRuby: true
 
 # 实现 
 
-## python 
+## python 暴力匹配法
 ```
 class Solution:
     def strStr(self, source, target):
