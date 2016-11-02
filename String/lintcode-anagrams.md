@@ -41,3 +41,35 @@ bool anagram(string s, string t) {
 ```
 
 ### 第二种方法使用数组对每个字符进行统计
+
+```cpp
+bool anagram(string s, string t) {
+	// write your code here
+	if (s.size() != t.size())
+		return false;
+
+	int charNum[256] = {0};//初始化一个全0的数组;
+	for(int i = 0;i < s.length();i++)
+	{
+	    charNum[s[i]]++;
+	    charNum[t[i]]--;
+	}
+	for(int i = 0;i < s.length();i++)
+	    if(charNum[s[i]] != 0)
+	        return false;
+	return true;
+}
+```
+
+## 使用排序比较法
+```cpp
+bool anagram(string s, string t) {
+	// write your code here
+	sort(s.begin(),s.end());
+	sort(t.begin(),t.end());
+	if(s != t)
+	    return false;
+	return true;
+}
+```
+
