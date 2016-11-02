@@ -61,7 +61,7 @@ grammar_cjkRuby: true
 ```
 
 ## 排序和hashmap法
-
+下面的multimap用的非常巧,即用到了一对多的红黑树  又用到了自动排序
 ```cpp
     vector<string> anagrams(vector<string> &strs) {
         // write your code here
