@@ -36,6 +36,7 @@ grammar_cjkRuby: true
                 //首先判断长度是否一致
                 if (strs[j].length() != strs[i].length())
                     continue;
+                //其实上面的两个可以替换为  if (appended[j] || strs[j].length() != strs[i].length())
                 //统计这个里面的元素
                 int charNumB[charNums] = {0};
                 for (int k = 0; k < strs[j].length(); k++)
