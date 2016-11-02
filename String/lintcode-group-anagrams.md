@@ -15,7 +15,8 @@ grammar_cjkRuby: true
         // write your code here
         vector<string> result;
         const int strs_size = strs.size();
-        int *appended = new int[strs_size];//数组的大小一定要是常量; 除非它是动态划分的;
+        int *appended = new int[strs_size];//数组的大小一定要是常量; 除非它是动态划分的;这种链表其实可以用vector替代
+        //vector<bool> visited(strs.size(), false); 初始化很方便;
         memset(appended, 0, sizeof(int)*strs_size);
         for (int i = 0; i < strs.size()-1; i++)
         {
