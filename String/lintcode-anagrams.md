@@ -4,7 +4,12 @@ tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
 
-使用哈希表加快速度
+# 题目来源 
+
+[ lintcode Two Strings Are Anagrams](http://www.lintcode.com/en/problem/two-strings-are-anagrams/)
+
+# 解法
+## 使用哈希表统计词频
 
 ```cpp
 // #include <map>
