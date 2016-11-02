@@ -11,7 +11,7 @@ grammar_cjkRuby: true
 # 解法
 ## 使用哈希表统计词频
 
-第一种方法使用c++的map集合来做:
+### 第一种方法使用c++的map集合来做:
 ```cpp
 
 bool anagram(string s, string t) {
@@ -39,3 +39,5 @@ bool anagram(string s, string t) {
 	return true;
 }
 ```
+
+### 第二种方法使用数组对每个字符进行统计
