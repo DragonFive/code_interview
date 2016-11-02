@@ -59,3 +59,33 @@ grammar_cjkRuby: true
         return result;
     }
 ```
+
+## 排序和hashmap法
+
+```cpp
+    vector<string> anagrams(vector<string> &strs) {
+        // write your code here
+        vector<string> result;
+        typedef multimap<string,string> strStrHash;
+        strStrHash  multiHash;//第一是是排序后的结果,第二个是对应的字符串;
+        //先把所有的字符串排序然后放入一对多的map里面;
+        for (int i = 0; i < strs.size(); i++)
+        {
+            string str = strs[i];
+            sort(str.begin(),str.end());
+            multiHash.insert(make_pair(str,strs[i]));
+        }
+        //把一个键有不少于两个值的值输出
+        strStrHash::iterator hashIter;
+        for (hashIter = multiHash.begin(); hashIter != multiHash.end(); hashIter++)
+            if (multiHash.count(hashIter->first) > 1)
+                result.push_back(hashIter->second);
+        return result;
+    }
+```
+## 参考资料
+
+[C++ 标准模板库STL multimap 使用方法与应用介绍（一） - 王世晖的学习记录 - 博客频道 - CSDN.NET](http://blog.csdn.net/wangshihui512/article/details/8925145)
+
+[c++中map与unordered_map的区别 - wolfrevoda的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/batuwuhanpei/article/details/50727227)
+
