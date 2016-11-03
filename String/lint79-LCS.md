@@ -63,6 +63,9 @@ grammar_cjkRuby: true
 
 ### 下面是正统的动态规划的代码 
 
+
+注意这里面二维数组直接使用vector的vector很是方便呢
+
 ```cpp
     int longestCommonSubstring(string &A, string &B) 
     {
