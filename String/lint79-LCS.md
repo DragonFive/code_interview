@@ -11,7 +11,7 @@ grammar_cjkRuby: true
 
 ## 动态规划？
 
-动态规划注意初始化，和状态的转移;
+动态规划注意初始化，和状态的转移; 时间复杂度$O(n^2)$
 ```cpp
     int longestCommonSubstring(string &A, string &B) {
         // write your code here
