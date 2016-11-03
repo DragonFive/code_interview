@@ -4,7 +4,7 @@ Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
 ## 结构
 
 ### string 字符串
-28. Implement strStr()  实现找字串功能
+28- Implement strStr()  实现找字串功能
 
 lint158 anagrams 两个乱序字符串的比较  lint55 compare-string和group string都是同型题目
 
