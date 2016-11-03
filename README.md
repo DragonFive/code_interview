@@ -5,6 +5,7 @@ Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
 
 ### string 字符串
 28. Implement strStr()  实现找字串功能
+anagrams 两个乱序字符串的比较 compare-string和group string都是同型题目
 
 
 
