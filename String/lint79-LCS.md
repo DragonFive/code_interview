@@ -4,6 +4,9 @@ tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
 
+# 题目来源 
+[Longest Common Substring](http://www.lintcode.com/en/problem/longest-common-substring/#)
+
 # 解法
 
 ## 动态规划？
