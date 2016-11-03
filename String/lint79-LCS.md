@@ -9,8 +9,8 @@ grammar_cjkRuby: true
 
 # 解法
 
-## 动态规划？
-
+## 动态规划
+### 下面是节省空间但逻辑比较复杂的代码
 动态规划注意初始化，和状态的转移; 时间复杂度$O(n^2)$
 ```cpp
     int longestCommonSubstring(string &A, string &B) {
@@ -58,5 +58,37 @@ grammar_cjkRuby: true
             }
         }
         return coLen;
+    }
+```
+
+### 下面是正统的动态规划的代码 
+
+```cpp
+    int longestCommonSubstring(string &A, string &B) 
+    {
+        if (A.empty() || B.empty()) {
+            return 0;
+        }
+
+        int n = A.length();
+        int m = B.length();
+        vector<vector<int> > f = vector<vector<int> >(n + 1, vector<int>(m + 1, 0));
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < m; ++j) {
+                if (A[i] == B[j]) {
+                    f[i + 1][j + 1] = 1 + f[i][j];
+                }
+            }
+        }
+
+        // find max lcs
+        int lcs = 0;
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 1; j <= m; ++j) {
+                if (f[i][j] > lcs) lcs = f[i][j];
+            }
+        }
+
+        return lcs;
     }
 ```
