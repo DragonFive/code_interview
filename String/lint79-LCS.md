@@ -67,31 +67,5 @@ grammar_cjkRuby: true
 注意这里面二维数组直接使用vector的vector很是方便呢
 
 ```cpp
-    int longestCommonSubstring(string &A, string &B) 
-    {
-        if (A.empty() || B.empty()) {
-            return 0;
-        }
 
-        int n = A.length();
-        int m = B.length();
-        vector<vector<int> > f = vector<vector<int> >(n + 1, vector<int>(m + 1, 0));
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                if (A[i] == B[j]) {
-                    f[i + 1][j + 1] = 1 + f[i][j];
-                }
-            }
-        }
-
-        // find max lcs
-        int lcs = 0;
-        for (int i = 1; i <= n; ++i) {
-            for (int j = 1; j <= m; ++j) {
-                if (f[i][j] > lcs) lcs = f[i][j];
-            }
-        }
-
-        return lcs;
-    }
 ```
