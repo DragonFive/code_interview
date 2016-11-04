@@ -67,5 +67,28 @@ grammar_cjkRuby: true
 注意这里面二维数组直接使用vector的vector很是方便呢
 
 ```cpp
-
+    int longestCommonSubstring(string &A, string &B) {
+        if (A.empty() || B.empty())
+            return 0;
+        int lenA = A.length();
+        int lenB = B.length();
+        //下面的动态二维数组保存的是以i,j结尾的子串的长度;
+        vector<vector<int>> lcsVec(lenA + 1, vector<int>(lenB + 1, 0));
+        for (int i = 0; i < lenA; i++)
+        {
+            for (int j = 0; j < lenB; j++)
+            {
+                //把i,j的结果保存在i+1,j+1里面便于初始化;
+                if (B[j] == A[i] )
+                    lcsVec[i + 1][j + 1] = lcsVec[i][j] + 1;
+            }
+        }
+        //下面找到最大的lcs;
+        int maxLcs = 0;
+        for (int i = 0; i < lenA + 1; i++)
+            for (int j = 0; j < lenB + 1; j++)
+                if (lcsVec[i][j] > maxLcs)
+                    maxLcs =  lcsVec[i][j];
+        return maxLcs;
+    }
 ```
