@@ -10,7 +10,9 @@ grammar_cjkRuby: true
 
 
 # 解法
-
+注意两种意外 
+1. 串为空
+2. 串内都是空格
 ```cpp
     string reverseWords(string s) {
         // write your code here
