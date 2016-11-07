@@ -39,4 +39,3 @@ grammar_cjkRuby: true
 ```
 
 ## 三次翻转法
-
