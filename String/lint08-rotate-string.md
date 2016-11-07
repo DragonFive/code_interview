@@ -41,3 +41,30 @@ grammar_cjkRuby: true
 ## 三次翻转法
 常见的翻转法应用题，仔细观察规律可知翻转的分割点在从数组末尾数起的offset位置。先翻转前半部分，随后翻转后半部分，最后整体翻转。
 
+三次翻转法 需要注意的是分段点在哪里
+```cpp
+    void rotateString(string &str,int offset)
+    {
+        //wirte your code here
+        if (str.empty())
+            return;
+        int len = str.size();
+        offset = offset % len;
+        if (offset == 0)
+            return;
+        reverseStr(str, 0, len - offset - 1);
+        reverseStr(str, len - offset, len - 1);
+        reverseStr(str, 0, len - 1);
+    }
+    void reverseStr(string &str, int start, int end)
+    {
+        while(end > start)
+        {
+            char temp  = str[start];
+            str[start] = str[end];
+            str[end]   = temp;
+            start++;
+            end--;
+        }
+    }
+```
