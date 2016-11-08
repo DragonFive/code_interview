@@ -7,6 +7,9 @@ grammar_cjkRuby: true
 
 [415 valid palindrome](http://www.lintcode.com/en/problem/valid-palindrome/)
 
+## leedcode相似题目 
+
+[125 valid palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 # 解法
 字符串的回文判断问题，由于字符串可随机访问，故逐个比较首尾字符是否相等最为便利，即常见的『两根指针』技法。此题忽略大小写，并只考虑字母和数字字符
