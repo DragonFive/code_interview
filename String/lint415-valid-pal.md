@@ -32,3 +32,6 @@ grammar_cjkRuby: true
         return true;
     }
 ```
+
+# 启示
+需要记住c语言的一些字符串处理api:  tolower 把字符转化为小写，  isalnum 判断一个字符是否是字母或者数字 , isdigit判断字符是否是数字  isalpha 判断是否是字母
