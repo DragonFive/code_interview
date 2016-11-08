@@ -43,6 +43,10 @@ grammar_cjkRuby: true
 
 [geeksforgeeks  如何判断一个链表是否是回文链表](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)
 
-题目中用到了数组的随机访问，所以可以使用两根指针的方式分别向后和向前比较。但如果
+题目中用到了数组的随机访问，所以可以使用两根指针的方式分别向后和向前比较。但如果是链表的话就不能往前返回了，需要用新的思路
+
+1. 使用一个stack
+2. 先找到队列的中间，然后对后一半进行翻转，比较前后两半的队列，如果一样就 
+
 
 
