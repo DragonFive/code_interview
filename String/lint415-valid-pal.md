@@ -41,4 +41,8 @@ grammar_cjkRuby: true
 
 # 引申到回文链表
 
+[geeksforgeeks  如何判断一个链表是否是回文链表](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)
+
 题目中用到了数组的随机访问，所以可以使用两根指针的方式分别向后和向前比较。但如果
+
+
