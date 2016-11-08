@@ -3,7 +3,9 @@ title: lint415-valid-pal
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
+# 题目来源
 
+[415 valid palindrome](http://www.lintcode.com/en/problem/valid-palindrome/)
 
 
 # 解法
