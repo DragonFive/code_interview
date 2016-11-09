@@ -11,7 +11,7 @@ grammar_cjkRuby: true
 [leetcode 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 # 解法 
 
-## 寻找最长公共字串 
+## 寻找最长公共字串（错误的做法） 
 
 时间复杂度为O(n^2)
 ```cpp
@@ -38,7 +38,9 @@ grammar_cjkRuby: true
         return s.substr(endIdx - maxLen + 1, maxLen);                    
     }
 ```
-
+**注意** 上面的做法是错误的 
+[Longest Palindromic Substring Part I](http://articles.leetcode.com/longest-palindromic-substring-part-i)
+里面有解释
 
 ## 两端拓展法
 这里认为遍历到的一个位置是回文字的中心，然后去找它的边界。这里的子问题是以该位置为中心的回文数的长度。
