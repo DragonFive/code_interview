@@ -5,10 +5,10 @@ grammar_cjkRuby: true
 ---
 
 # 题目来源 
-
+[lint200-Longest-Palindromic-Substring](http://www.lintcode.com/en/problem/longest-palindromic-substring/)
 ## 相似题目
 
-
+[leetcode 5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 # 解法 
 
 ## 寻找最长公共字串 
