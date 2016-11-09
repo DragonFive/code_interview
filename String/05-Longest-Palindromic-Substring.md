@@ -4,6 +4,9 @@ tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
 
+
+[Leetcode/String/lint200-Longest-Palindromic-Substring.md](https://github.com/DragonFive/Leetcode/blob/master/String/lint200-Longest-Palindromic-Substring.md)
+
 # 解法
 ```cpp
     string longestPalindrome(string& s) 
