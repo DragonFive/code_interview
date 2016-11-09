@@ -41,7 +41,7 @@ grammar_cjkRuby: true
 **注意** 上面的做法是错误的 
 [Longest Palindromic Substring Part I](http://articles.leetcode.com/longest-palindromic-substring-part-i)
 里面有解释
-
+比如 S = “abacdfgdcaba”, 则它翻转之后为S’ = “abacdgfdcaba”  计算结果为 “abacd”，显然这个是最长的子序列
 ## 两端拓展法
 这里认为遍历到的一个位置是回文字的中心，然后去找它的边界。这里的子问题是以该位置为中心的回文数的长度。
 ```cpp
