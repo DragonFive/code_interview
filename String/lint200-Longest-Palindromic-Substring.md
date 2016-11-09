@@ -12,6 +12,8 @@ grammar_cjkRuby: true
 # 解法 
 
 ## 寻找最长公共字串 
+
+时间复杂度为O(n^2)
 ```cpp
     string longestPalindrome(string& s) {
         // Write your code here
