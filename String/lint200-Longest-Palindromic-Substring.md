@@ -15,7 +15,8 @@ grammar_cjkRuby: true
 
 时间复杂度为O(n^2)
 ```cpp
-    string longestPalindrome(string& s) {
+    string longestPalindrome(string& s) 
+	{
         // Write your code here
         if (s.empty())
             return s;
@@ -30,7 +31,7 @@ grammar_cjkRuby: true
         int maxLen = 0, endIdx = 0;
         for (int i = 0; i <= len; i++)
             for (int j = 0; j <= len; j++)
-                if (lenVec[i][j] > maxLen)
+                if (lenVec[i][j] > maxLen )
                 {
                     maxLen = lenVec[i][j];
                     endIdx = i - 1;
@@ -45,9 +46,31 @@ grammar_cjkRuby: true
 
 不过我们依然可以修正它，虽然在中间过程中子问题算法的是最长公共字串，但最后可以根据题目的要求在这些字串里面找到最大的字串
 ### 修正后的代码为 
-
+需要保证两个串其实在坐标上是一个串
 ```cpp
-
+    string longestPalindrome(string& s) 
+	{
+        // Write your code here
+        if (s.empty())
+            return s;
+        string t = s;
+        std::reverse(t.begin(), t.end());
+        int len = s.length();
+        vector<vector<int> > lenVec =  vector<vector<int> >(len + 1, vector<int>(len + 1, 0));
+        for (int i = 0; i < len; i++)
+            for (int j = 0; j < len; j++)
+                if (s[i] == t[j])
+                    lenVec[i + 1][j + 1] = lenVec[i][j] + 1;
+        int maxLen = 0, endIdx = 0;
+        for (int i = 0; i <= len; i++)
+            for (int j = 0; j <= len; j++)
+                if (lenVec[i][j] > maxLen && ( i - len + j == lenVec[i][j] ))
+                {
+                    maxLen = lenVec[i][j];
+                    endIdx = i - 1;
+                }    
+        return s.substr(endIdx - maxLen + 1, maxLen);                    
+    }
 
 ```
 
