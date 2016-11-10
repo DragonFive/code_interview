@@ -127,3 +127,9 @@ int KmpSearch(char* s, char* p)
 ## 参考资料 
 
 [从头到尾彻底理解KMP（2014年8月22日版） - 结构之法 算法之道 ](http://blog.csdn.net/v_july_v/article/details/7041827)
+
+
+# 从Trie树（字典树）谈到后缀树
+
+
+
