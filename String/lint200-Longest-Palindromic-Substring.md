@@ -47,6 +47,7 @@ grammar_cjkRuby: true
 不过我们依然可以修正它，虽然在中间过程中子问题算法的是最长公共字串，但最后可以根据题目的要求在这些字串里面找到最大的字串
 ### 修正后的代码为 
 需要保证两个串其实在坐标上是一个串
+ 时间复杂度O(N2) 空间复杂度 O(N2)  
 ```cpp
     string longestPalindrome(string& s) 
 	{
