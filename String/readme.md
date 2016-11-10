@@ -133,3 +133,7 @@ int KmpSearch(char* s, char* p)
 
 
 
+
+## 参考资料 
+
+[从Trie树（字典树）谈到后缀树](http://blog.csdn.net/v_july_v/article/details/6897097)
