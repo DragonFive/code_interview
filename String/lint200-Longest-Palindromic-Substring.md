@@ -110,6 +110,13 @@ grammar_cjkRuby: true
 ```
 
 
+## 参考资料
+
+[Longest Palindromic Substring Part I](http://articles.leetcode.com/longest-palindromic-substring-part-i)
+
+[Longest Palindromic Substring Part II](http://articles.leetcode.com/longest-palindromic-substring-part-ii)
+
+
 
 
 
