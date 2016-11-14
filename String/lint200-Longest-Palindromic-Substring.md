@@ -78,6 +78,8 @@ grammar_cjkRuby: true
 
 ## 两端拓展法
 这里认为遍历到的一个位置是回文字的中心，然后去找它的边界。这里的子问题是以该位置为中心的回文数的长度。
+这个算法的时间复杂度是 O(n^2) 空间复杂度是O(1)
+
 ```cpp
     string longestPalindrome(string& s) 
     {
