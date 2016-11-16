@@ -99,6 +99,8 @@ char * findSubStr(char *begins, char *beginp, char *endp)
 
 ## elegant solution
 
+[Linear runtime and constant space solution](https://discuss.leetcode.com/topic/3040/linear-runtime-and-constant-space-solution)
+
 挨个元素讨论法
 ```cpp
  bool isMatch(const char *s, const char *p) {
