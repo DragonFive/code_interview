@@ -39,6 +39,3 @@ grammar_cjkRuby: true
     }
 ```
 
-
-
-# 
