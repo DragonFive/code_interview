@@ -70,3 +70,6 @@ grammar_cjkRuby: true
     }
 
 ```
+
+# extention 
+[geeks for geeks  find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
