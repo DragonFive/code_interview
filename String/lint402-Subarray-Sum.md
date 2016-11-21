@@ -78,3 +78,6 @@ grammar_cjkRuby: true
 
 
 [lintcode139 Subarray Sum Closest](http://www.lintcode.com/en/problem/subarray-sum-closest/)
+
+
+[stack overflow How to find the subarray that has sum closest to zero or a certain value](http://stackoverflow.com/questions/16388930/how-to-find-the-subarray-that-has-sum-closest-to-zero-or-a-certain-value-t-in-o)
