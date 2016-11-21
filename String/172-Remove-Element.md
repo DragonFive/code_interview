@@ -42,3 +42,6 @@ grammar_cjkRuby: true
 
 # reference
 [STL Vector remove()和erase()的使用](http://blog.csdn.net/yockie/article/details/7859330)
+
+
+[九章算法 remove element解题](http://www.jiuzhang.com/solutions/remove-element/)
