@@ -17,6 +17,7 @@ grammar_cjkRuby: true
 
 需要记住避免一些方法的坑 remove和erase都有各自的坑，remove其实并不会真的把数据删掉，erase删完之后的iterator也没有用了。
 
+注意时间复杂度是O(n^2)
 ```cpp
     int removeElement(vector<int> &A, int elem) {
         // write your code here
