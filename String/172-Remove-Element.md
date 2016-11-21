@@ -39,6 +39,9 @@ grammar_cjkRuby: true
         return A.size();
     }
 ```
+## 两根指针法 
+
+
 
 # reference
 [STL Vector remove()和erase()的使用](http://blog.csdn.net/yockie/article/details/7859330)
