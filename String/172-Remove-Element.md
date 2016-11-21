@@ -15,7 +15,7 @@ grammar_cjkRuby: true
 # solution
 ## 使用STL容器
 
-需要记住避免一些方法的坑 remove和erase都有各自的坑
+需要记住避免一些方法的坑 remove和erase都有各自的坑，remove其实并不会真的把数据删掉，erase删完之后的iterator也没有用了
 
 ```cpp
     int removeElement(vector<int> &A, int elem) {
