@@ -25,6 +25,19 @@ grammar_cjkRuby: true
     }
 ```
 
+或者 
+```cpp
+    int removeElement(vector<int> &A, int elem) {
+        // write your code here
+        vector<int>::iterator it = A.begin();
+        for (; it != A.end();)
+            if (*it == elem)
+                it = A.erase(it);
+            else
+                it++;
+        return A.size();
+    }
+```
 
 # reference
 [STL Vector remove()和erase()的使用](http://blog.csdn.net/yockie/article/details/7859330)
