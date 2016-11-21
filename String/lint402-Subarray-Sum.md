@@ -13,6 +13,8 @@ grammar_cjkRuby: true
 [geeks for geeks, Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
 
 # solution
+可以先把问题转化，f(i) 表示从下标0到下标i求和的结果，那如果f(i) == f(j)就说明在i和j之间的数的和为0。在一串数中检索两个相等的数可以使用哈希表呀。
+
 
 ```cpp
     vector<int> subarraySum(vector<int> nums){
