@@ -41,7 +41,32 @@ grammar_cjkRuby: true
 ```
 ## 两根指针法 
 
+**覆盖法**
+```cpp
+int removeElement(vector<int> &A, int elem) {
+	int n = A.size();
+	for (int i = 0; i < n; i++)
+		if (A[i] == elem)
+		{
+			A[i] = A[n - 1];
+			i--;
+			n--;
+		}
+}
+```
 
+**不同移动法**
+```cpp
+int removeElement(vector<int> &A, int elem) {
+	int next = 0;
+	for (int i = 0; i < A.size(); i++)
+		if (A[i] != elem)
+		{
+			A[start++] = A[i];
+		}
+	return start;
+}
+```
 
 # reference
 [STL Vector remove()和erase()的使用](http://blog.csdn.net/yockie/article/details/7859330)
