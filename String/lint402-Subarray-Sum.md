@@ -12,6 +12,8 @@ grammar_cjkRuby: true
 
 [geeks for geeks, Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
 
+[lintcode139 Subarray Sum Closest](http://www.lintcode.com/en/problem/subarray-sum-closest/)
+
 # solution
 可以先把问题转化，f(i) 表示从下标0到下标i求和的结果，那如果f(i) == f(j)就说明在i和j之间的数的和为0。在一串数中检索两个相等的数可以使用哈希表呀。
 
@@ -73,3 +75,6 @@ grammar_cjkRuby: true
 
 # extention 
 [geeks for geeks  find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
+
+
+[lintcode139 Subarray Sum Closest](http://www.lintcode.com/en/problem/subarray-sum-closest/)
