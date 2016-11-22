@@ -13,7 +13,7 @@ grammar_cjkRuby: true
 
 
 # solution
-
+三步翻转法
 ```cpp
     void recoverRotatedSortedArray(vector<int> &nums) {
         // write your code here
