@@ -42,3 +42,29 @@ grammar_cjkRuby: true
         return end;
     }
 ```
+
+## 夹层法
+
+```cpp
+    int partitionArray(vector<int> &nums, int k) {
+        // write your code here
+        // 判断是否为空;
+        if (nums.empty())
+            return 0;
+        // 使用隔间法;
+        int lower = 0, upper = 0;
+        while (upper < nums.size())
+        {
+            if (nums[upper] >= k)
+                upper++;
+            else
+            {
+                int temp = nums[upper];
+                nums[upper] = nums[lower];
+                nums[lower] = temp;
+                lower++; upper++; 
+            }
+        }
+        return lower;
+    }
+```
