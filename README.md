@@ -11,7 +11,7 @@ lint158 anagrams 两个乱序字符串的比较  lint55 compare-string和group s
 int79-LCS  lintcode上的79题 寻找最长公共字串
 
 
-### integer-arr 整形数组
+### integer-arr 整型数组
 
 
 
