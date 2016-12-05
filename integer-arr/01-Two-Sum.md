@@ -39,3 +39,32 @@ grammar_cjkRuby: true
         
     }
 ```
+
+其实上面先建哈希表再用的方式并不好
+
+```cpp
+    vector<int> twoSum(vector<int> &nums, int target) {
+        // write your code here
+        unordered_map<int, int> numsIndexMap;
+        const int size = nums.size();
+        vector<int> ret;
+        // 建立哈希表
+        for (int i = 0; i < size; i++)
+        {
+            if (numsIndexMap.find(target - nums[i]) != numsIndexMap.end())
+            {
+                ret.push_back(numsIndexMap[target - nums[i] ] );
+                ret.push_back(i);
+                break;
+            }
+            else
+            {
+                numsIndexMap[nums[i] ] = i;
+            }
+        }
+        return ret;       
+        
+    }
+
+```
+
