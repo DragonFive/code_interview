@@ -1,5 +1,5 @@
 ---
-title: 41first-missing-positive
+title: 41-first-missing-positive
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
