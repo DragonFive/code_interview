@@ -1,5 +1,5 @@
 ---
-title: lint402-Subarray-Sum
+title: lint138-Subarray-Sum
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
