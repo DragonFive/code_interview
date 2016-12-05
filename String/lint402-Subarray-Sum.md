@@ -6,7 +6,7 @@ grammar_cjkRuby: true
 
 # source
 
-[ lintcode 402-Subarray-Sum](http://www.lintcode.com/en/problem/subarray-sum/)
+[ lintcode 138-Subarray-Sum](http://www.lintcode.com/en/problem/subarray-sum/)
 
 ## similiar problem 
 
