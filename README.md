@@ -12,6 +12,8 @@ int79-LCS  lintcode上的79题 寻找最长公共字串
 
 
 ### integer-arr 整型数组
+值得回顾的题 
+41-first-missing-positive
 
 
 
