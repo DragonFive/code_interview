@@ -15,6 +15,8 @@ lintcode 138-Subarray-Sum
 值得回顾的题 
 41-first-missing-positive
 
+ 01-Two-Sum
+
 
 
 
