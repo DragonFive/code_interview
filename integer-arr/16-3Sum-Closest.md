@@ -10,6 +10,11 @@ grammar_cjkRuby: true
 [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 
 
+## similar problem
+
+[lintcode 57 3Sum Closest](http://www.lintcode.com/en/problem/3sum-closest/)
+
+
 # solution 
 
 ## 排序+两根指针法 
