@@ -8,6 +8,10 @@ grammar_cjkRuby: true
 
 [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
+## similar problem 
+
+[Remove Duplicates from Sorted Array](http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array/)
+
 # solution 
 
 ## 过滤法
