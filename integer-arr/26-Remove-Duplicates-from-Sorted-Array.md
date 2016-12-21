@@ -10,7 +10,7 @@ grammar_cjkRuby: true
 
 ## similar problem 
 
-[Remove Duplicates from Sorted Array](http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array/)
+[lintcode 100 Remove Duplicates from Sorted Array](http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array/)
 
 # solution 
 
