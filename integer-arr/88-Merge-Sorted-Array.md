@@ -9,6 +9,10 @@ grammar_cjkRuby: true
 
 [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
+## similiar problem 
+
+[lint6 merge-sorted-array](http://www.lintcode.com/en/problem/merge-sorted-array/)
+
 # solution
 
 ```cpp
