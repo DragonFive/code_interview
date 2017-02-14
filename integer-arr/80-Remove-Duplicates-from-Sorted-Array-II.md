@@ -1,39 +1,43 @@
 ---
-title: 80-Remove-Duplicates-from-Sorted-Array-II
+title: 80-remove-duplicates-from-sorted-array-ii
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
 
-# problem
+# problem 
+[80/remove-duplicates-from-sorted-array-ii](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
-[80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+## similiar problem 
 
-## similar problem 
+[lint 101](http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array-ii/)
 
-[(100) Remove Duplicates from Sorted Array](http://www.lintcode.com/en/problem/remove-duplicates-from-sorted-array/)
 
-# solution 
+# solution
+
+## tow point 
 
 ```cpp
     int removeDuplicates(vector<int>& nums) {
         if (nums.empty())
             return 0;
+        if (nums.size() <= 2)
+            return nums.size();
+        int left = 0, right = 0, last = -1, count = 0;
+        last = nums[0];count = 1; left = 1; right = 1;
         const int nums_size = nums.size();
-        if (nums_size < 3)
-            return nums_size;
-        int j = 1;
-        bool equaled = false;
-        for (int i = 1; i< nums_size; i++)
+        for ( ; right < nums_size; right++)
         {
-            if (nums[i] == nums[i - 1] && equaled)// 已经不是第一次相等了;
-                continue;
-            if (nums[i] == nums[i - 1])
-                equaled = true;
+            if (nums[right] !=  last)
+                count = 0;
+            if (nums[right] !=  last || count < 2)
+            {
+                nums[left] = nums[right];
+                last = nums[left];left++ ;count++;
+            }
             else
-                equaled = false;
-            nums[j] = nums[i];
-            j++;
+                count++;
         }
-        return j;
+        return left;
+        
     }
 ```
