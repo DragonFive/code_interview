@@ -54,3 +54,7 @@ grammar_cjkRuby: true
         return i;
     }
 ```
+
+# 学习资料
+
+[寻找第K大的数的方法总结](http://www.cnblogs.com/zhjp11/archive/2010/02/26/1674227.html)
