@@ -13,9 +13,11 @@ grammar_cjkRuby: true
  
 [/lint80-median](https://github.com/DragonFive/Leetcode/blob/master/integer-arr/lint80-median.md)
 
+[lint5 (5) Kth Largest Element](http://www.lintcode.com/en/problem/kth-largest-element/)
+
 # solution
 
-局部快排法
+## 局部快排法
 
 ```cpp
     int findKthLargest(vector<int>& nums, int k) {
@@ -54,6 +56,16 @@ grammar_cjkRuby: true
         return i;
     }
 ```
+
+## stl的方法 nth_element
+
+···cpp
+    int kthLargestElement(int k, vector<int> nums) {
+        nth_element(nums.begin(), nums.begin() + k ,nums.end());
+        return nums[nums.size() - k];
+    }
+```
+
 
 # 学习资料
 
