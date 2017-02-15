@@ -8,6 +8,10 @@ grammar_cjkRuby: true
 
 [215-kth-largest-element-in-an-array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
+## similiar problem
+
+ 
+[/lint80-median](https://github.com/DragonFive/Leetcode/blob/master/integer-arr/lint80-median.md)
 
 # solution
 
