@@ -48,7 +48,7 @@ grammar_cjkRuby: true
     }
 ```
 
-## 真正的求下界的方法
+## 真正的求上下界的方法
 
 ```cpp
     vector<int> searchRange(vector<int>& nums, int target) {
