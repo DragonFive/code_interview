@@ -8,6 +8,8 @@ grammar_cjkRuby: true
 
 [34-search-for-range](https://leetcode.com/problems/search-for-a-range/?tab=Description)
 # solution
+
+## ordinary solution
 ```cpp
     vector<int> searchRange(vector<int>& nums, int target) {
        //先findFirst
