@@ -7,6 +7,11 @@ grammar_cjkRuby: true
 # problem
 
 [34-search-for-range](https://leetcode.com/problems/search-for-a-range/?tab=Description)
+
+## similiar problem 
+
+[lintv61 search for a range](http://www.lintcode.com/en/problem/search-for-a-range/)
+
 # solution
 
 ## ordinary solution
