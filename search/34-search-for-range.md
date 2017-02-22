@@ -45,3 +45,39 @@ grammar_cjkRuby: true
        return ret;
     }
 ```
+
+## 真正的求下界的方法
+
+```cpp
+    vector<int> searchRange(vector<int>& nums, int target) {
+       //先findFirst
+       vector<int> ret(2, -1);
+       if (nums.empty())
+           return ret;
+       int len = nums.size();
+       
+       int i = -1, j = len;
+       while ( i + 1 < j )
+       {
+           int k = i + (j - i)/2;
+           if ( nums[k] < target)
+               i = k;
+           else
+               j = k;
+       }
+       if (j < len && nums[j] != target || j == len && nums[i] != target)
+           return ret;
+       ret[0] = j;
+       i = j - 1, j = len;
+       while (i + 1 < j)
+       {
+           int k = i + (j - i)/2;
+           if (nums[k] > target)
+             j = k;
+           else
+             i = k;
+       }
+       ret[1] = i;
+       return ret;
+    }
+```
