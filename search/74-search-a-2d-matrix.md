@@ -32,7 +32,7 @@ grammar_cjkRuby: true
 ```
 
 ## 从右上到左下
-
+时间复杂度为O(m+n)
 ```cpp
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         if ( matrix.empty() || matrix[0].empty() )
