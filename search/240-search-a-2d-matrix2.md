@@ -6,6 +6,10 @@ grammar_cjkRuby: true
 
 # problem
 [240-search-a-2d-matrix2](https://leetcode.com/problems/search-a-2d-matrix-ii/?tab=Description)
+## similiar problem
+
+[74-search-a-2d-matrix](https://github.com/DragonFive/Leetcode/blob/master/search/74-search-a-2d-matrix.md)
+
 # solution
 逐层遍历法
 
