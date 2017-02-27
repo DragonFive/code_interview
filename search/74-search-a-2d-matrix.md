@@ -10,6 +10,7 @@ grammar_cjkRuby: true
 
 # solution 
  ## 折半查找法
+ 时间复杂度为O(logmn)
 ```cpp
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         if (matrix.empty())
