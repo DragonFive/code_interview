@@ -9,6 +9,7 @@ grammar_cjkRuby: true
 [81search-in-rotated-sorted-array-ii](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/?tab=Description)
 
 ## similiar problem 
+[33-search-in-rotated-sorted-array](https://github.com/DragonFive/Leetcode/blob/master/search/33-search-in-rotated-sorted-array.md)
 
 [63search-in-rotated-sorted-array-ii/](http://www.lintcode.com/en/problem/search-in-rotated-sorted-array-ii/)
 
