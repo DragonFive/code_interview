@@ -55,3 +55,40 @@ grammar_cjkRuby: true
             return binSearch(nums, start, mid, target);
     }
 ```
+
+开头比较法
+
+```cpp
+    int search(vector<int>& nums, int target) {
+        //先找到中间点;
+        if (nums.empty())
+            return -1;
+        int i = 0, j = nums.size() - 1;
+        while ( i + 1 < j )
+        {
+            int k = i + (j - i) / 2;
+            if ( target == nums[k])
+                return k;
+            if ( nums[i] < nums[k] )
+            {
+                if ( nums[i] <= target && nums[k] >= target)
+                    j = k;
+                else
+                    i = k;
+            }
+            else
+            {
+                if (nums[k] <= target && nums[j] >= target)
+                    i = k;
+                else
+                    j = k;
+            }
+
+        }
+        if (nums[i] == target)
+            return i;
+        if (nums[j] == target)
+            return j;
+        return -1;
+    }
+```
