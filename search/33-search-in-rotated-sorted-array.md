@@ -7,6 +7,10 @@ grammar_cjkRuby: true
 # problem
 
 [33-search-in-rotated-sorted-array](https://leetcode.com/problems/search-in-rotated-sorted-array/?tab=Description)
+## similiar problem
+
+[lint62 Search in Rotated Sorted Array](http://www.lintcode.com/en/problem/search-in-rotated-sorted-array/)
+
 # solution
 
 ```cpp
