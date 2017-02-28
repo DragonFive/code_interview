@@ -28,6 +28,12 @@ lintcode 138-Subarray-Sum
 [215-kth-largest-element-in-an-array](https://github.com/DragonFive/Leetcode/blob/master/integer-arr/215-kth-largest-element-in-an-array.md)
 
 
+## 折半搜索相关的题目
+
+[33-search-in-rotated-sorted-array.md](https://github.com/DragonFive/Leetcode/blob/master/search/33-search-in-rotated-sorted-array.md)
+
+[81-search-in-rotated-sorted-array-ii.md](https://github.com/DragonFive/Leetcode/blob/master/search/81-search-in-rotated-sorted-array-ii.md)
+
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26418207&auto=1&height=66"></iframe>
 ```
