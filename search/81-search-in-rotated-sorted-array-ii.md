@@ -13,7 +13,7 @@ grammar_cjkRuby: true
 [63search-in-rotated-sorted-array-ii/](http://www.lintcode.com/en/problem/search-in-rotated-sorted-array-ii/)
 
 # solution
-
+关口在于用开头和中间的比来确定有序序列
 ```cpp
     bool search(vector<int>& nums, int target) {
         if (nums.empty())
