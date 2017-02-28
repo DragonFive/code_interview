@@ -32,3 +32,27 @@ grammar_cjkRuby: true
         return nums[j];
     }
 ```
+
+经过修正变成
+```cpp
+    int findMin(vector<int>& nums) {
+        int i = 0, j = nums.size() - 1;
+        
+        while ( i + 1 < j )
+        {
+            int k = i + (j - i) / 2;
+            if (nums[i] < nums[k])
+            {//说明左边是有序序列;最小值在右边;或者本来就有序
+                if (nums[i] < nums[j])
+                    return nums[i];
+                else
+                    i = k;
+            }
+            else
+                j = k;
+        }
+        if (nums[i] < nums[j])
+            return nums[i];
+        return nums[j];
+    }
+```
