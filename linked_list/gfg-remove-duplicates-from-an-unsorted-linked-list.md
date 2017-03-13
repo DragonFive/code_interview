@@ -35,3 +35,28 @@ void removeDuplicates(struct Node *start)
     }
 }
 ```
+
+使用Map来做
+```cpp
+    ListNode *deleteDuplicates(ListNode *head) {
+        if (head == NULL) return NULL;
+
+        // C++ 11 use unordered_map
+        // unordered_map<int, bool> hash;
+        map<int, bool> hash;
+        hash[head->val] = true;
+        ListNode *curr = head;
+        while (curr->next != NULL) {
+            if (hash.find(curr->next->val) != hash.end()) {
+                ListNode *temp = curr->next;
+                curr->next = curr->next->next;
+                delete temp;
+            } else {
+                hash[curr->next->val] = true;
+                curr = curr->next;
+            }
+        }
+
+        return head;
+    }
+```
