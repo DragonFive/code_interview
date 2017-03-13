@@ -1,6 +1,6 @@
 # Leetcode
 Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
-用python和c++实现的leetcode和lintcode的题解
+用python和c++实现的leetcode和lintcode以及geeksForGeeks的题解
 ## 结构
 
 ### string 字符串
@@ -33,6 +33,10 @@ lintcode 138-Subarray-Sum
 [33-search-in-rotated-sorted-array.md](https://github.com/DragonFive/Leetcode/blob/master/search/33-search-in-rotated-sorted-array.md)
 
 [81-search-in-rotated-sorted-array-ii.md](https://github.com/DragonFive/Leetcode/blob/master/search/81-search-in-rotated-sorted-array-ii.md)
+
+
+## linkedList
+82-remove-duplicates-from-sorted-list-ii
 
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26418207&auto=1&height=66"></iframe>
