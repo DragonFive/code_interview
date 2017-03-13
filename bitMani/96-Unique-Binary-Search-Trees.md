@@ -48,5 +48,19 @@ grammar_cjkRuby: true
 使用这种时空复杂度都为O(n)的方法的前提是要知道它是卡特兰数。
 
 如果不知道还是乖乖地使用一般的方法吧。
+`!$count[i] = \sum_{j=1}^{i-1}count[j]*count[j-1-i]$`
 
+```cpp
+    int numTrees(int n) {
+        int nums[n+1];
+        memset(nums,0,sizeof(int)*(n+1));
+        nums[0] = 1;
+        for (int i = 1; i <= n; i++)
+            for (int j = 0; j < i; j++)
+            {
+                nums[i] += nums[j] * nums[i - 1 - j] ;
+            }
+        return nums[n];
+    }
+```
 
