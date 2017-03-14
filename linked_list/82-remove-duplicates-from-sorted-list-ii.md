@@ -66,7 +66,7 @@ grammar_cjkRuby: true
 
 
 # 使用哑节点
-
+对于首节点有变换可能的，一定要注意使用哑节点。
 ```cpp
     ListNode* deleteDuplicates(ListNode* head) {
         if (head == NULL)
