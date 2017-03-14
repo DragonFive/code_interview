@@ -63,3 +63,35 @@ grammar_cjkRuby: true
         return head;
     }
 ```
+
+
+# 使用哑节点
+
+```cpp
+    ListNode* deleteDuplicates(ListNode* head) {
+        if (head == NULL)
+            return head;
+        ListNode *dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode * cur = dummy;
+        while (cur->next)
+        {
+            //按数据段进行搜索,而不是按单个数据搜索，运用了上下文信息，与
+            if (cur->next->next!=NULL && cur->next->val == cur->next->next->val)
+            {
+                int preval = cur->next->val;
+                //删除这个数据段，等于val的所有节点;
+                while (cur->next!=NULL && cur->next->val == preval)
+                {
+                    ListNode * tmp = cur->next;
+                    cur->next = tmp->next;
+                    delete tmp;
+                    tmp = NULL;
+                }
+            }
+            else
+                cur = cur->next;
+        }
+        return dummy->next;
+    }
+```
