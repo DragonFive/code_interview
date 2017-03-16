@@ -25,3 +25,7 @@ grammar_cjkRuby: true
         return true;
     }
 ```
+
+
+# 参考资料
+[判断链表是否有环，以及环的位置，和两个交叉链表相交的位置](http://www.cnblogs.com/missair/archive/2010/08/05/1793492.html)
