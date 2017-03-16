@@ -45,3 +45,7 @@ grammar_cjkRuby: true
         return dummy->next;
     }
 ```
+
+# 更强的方法
+
+[更强的方法](https://algorithm.yuanbin.me/zh-hans/linked_list/merge_k_sorted_lists.html)
