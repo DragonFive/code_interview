@@ -10,7 +10,7 @@ grammar_cjkRuby: true
 [143-reorder-list](https://leetcode.com/problems/reorder-list/#/description)
 
 # solution
-
+反转链表后归并
 ```cpp
     void reorderList(ListNode* head) {
         //如果不足长度就算了;
