@@ -9,6 +9,7 @@ grammar_cjkRuby: true
 
 为什么有环的话，快指针一定能遇到满指针呢，因为它们相遇时一定是在环中转圈，而快指针每次比慢指针多走一步，所以两者的正向距离会慢慢变小。
 # solution
+方法一：快慢节点相错法
 ```cpp
     bool hasCycle(ListNode *head) {
         if (head == NULL || head->next == NULL)
@@ -25,7 +26,24 @@ grammar_cjkRuby: true
         return true;
     }
 ```
+方法二：同一起点
 
+```cpp
+    bool hasCycle(ListNode *head) {
+        if (head == NULL)
+            return false;
+        ListNode *fast = head;
+        ListNode *slow = head;
+        while (fast!=NULL&&fast->next!=NULL)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+            if (slow != fast)
+                return true;
+        }
+        return false;
+    }
+```
 
 # 参考资料
 [判断链表是否有环，以及环的位置，和两个交叉链表相交的位置](http://www.cnblogs.com/missair/archive/2010/08/05/1793492.html)
