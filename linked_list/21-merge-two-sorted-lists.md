@@ -1,6 +1,6 @@
 ---
 title: 21-merge-two-sorted-lists
-tags: 在河之洲,算法,小书匠
+tags: 在河之洲,算法,leetcode,easy
 grammar_cjkRuby: true
 ---
 
