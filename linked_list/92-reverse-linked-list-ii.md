@@ -8,6 +8,8 @@ grammar_cjkRuby: true
 # problem
 
 [92-reverse-linked-list-ii](https://leetcode.com/problems/reverse-linked-list-ii/#/description)
+
+需要注意的是哑节点
 # solution
 ```cpp
     ListNode* reverseBetween(ListNode* head, int m, int n) {
