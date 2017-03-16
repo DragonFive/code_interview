@@ -46,6 +46,8 @@ lintcode 138-Subarray-Sum
 [141-linked-list-cycle](https://github.com/DragonFive/Leetcode/blob/master/linked_list/141-linked-list-cycle.md)
 [142-linked-list-cycle-ii](https://github.com/DragonFive/Leetcode/blob/master/linked_list/142-linked-list-cycle-ii.md)
 [判断链表是否有环，以及环的位置，和两个交叉链表相交的位置](http://www.cnblogs.com/missair/archive/2010/08/05/1793492.html)
+
+[92-reverse-linked-list-ii](https://github.com/DragonFive/Leetcode/blob/master/linked_list/92-reverse-linked-list-ii.md)
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26418207&auto=1&height=66"></iframe>
 ```
