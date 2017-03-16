@@ -1,6 +1,6 @@
 ---
 title: 206-reverse-linked-list
-tags: 在河之洲,算法,小书匠
+tags: 在河之洲,算法,leetcode,easy
 grammar_cjkRuby: true
 ---
 
