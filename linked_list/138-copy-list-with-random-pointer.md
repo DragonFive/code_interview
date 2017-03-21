@@ -9,7 +9,7 @@ grammar_cjkRuby: true
 [138-copy-list-with-random-pointer](https://leetcode.com/problems/copy-list-with-random-pointer/#/description)
 
 # solution
-
+使用hash表来存储位置的对应关系，同时赋予链表快速查询和常数级索引的功能
 ```cpp
     RandomListNode *copyRandomList(RandomListNode *head) {
         //先遍历按next,拷贝，并保存两个hash；
