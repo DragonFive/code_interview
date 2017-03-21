@@ -52,7 +52,9 @@ lintcode 138-Subarray-Sum
 [23-merge-k-sorted-lists](https://github.com/DragonFive/Leetcode/blob/master/linked_list/23-merge-k-sorted-lists.md)
 [143-reorder-list](https://github.com/DragonFive/Leetcode/blob/master/linked_list/143-reorder-list.md)
 
-[234-palindrome-linked-list](https://leetcode.com/problems/palindrome-linked-list/#/description)
+[234-palindrome-linked-list](https://github.com/DragonFive/Leetcode/blob/master/linked_list/234-palindrome-linked-list.md)
+
+[146-lru-cache](https://github.com/DragonFive/Leetcode/blob/master/linked_list/146-lru-cache.md)
 
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26418207&auto=1&height=66"></iframe>
