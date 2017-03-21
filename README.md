@@ -56,6 +56,8 @@ lintcode 138-Subarray-Sum
 
 [146-lru-cache](https://github.com/DragonFive/Leetcode/blob/master/linked_list/146-lru-cache.md)
 
+[138-copy-list-with-random-pointer](https://github.com/DragonFive/Leetcode/blob/master/linked_list/138-copy-list-with-random-pointer.md)
+
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26418207&auto=1&height=66"></iframe>
 ```
