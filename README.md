@@ -49,6 +49,8 @@ lintcode 138-Subarray-Sum
 
 [92-reverse-linked-list-ii](https://github.com/DragonFive/Leetcode/blob/master/linked_list/92-reverse-linked-list-ii.md)
 
+[61-rotate-list](https://github.com/DragonFive/Leetcode/blob/master/linked_list/61-rotate-list.md)
+
 [23-merge-k-sorted-lists](https://github.com/DragonFive/Leetcode/blob/master/linked_list/23-merge-k-sorted-lists.md)
 [143-reorder-list](https://github.com/DragonFive/Leetcode/blob/master/linked_list/143-reorder-list.md)
 
