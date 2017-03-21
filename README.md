@@ -51,6 +51,9 @@ lintcode 138-Subarray-Sum
 
 [61-rotate-list](https://github.com/DragonFive/Leetcode/blob/master/linked_list/61-rotate-list.md)
 
+[203-remove-linked-list-elements](https://github.com/DragonFive/Leetcode/blob/master/linked_list/203-remove-linked-list-elements.md)
+
+[147-insertion-sort-list](https://github.com/DragonFive/Leetcode/blob/master/linked_list/147-insertion-sort-list.md)
 [24-swap-nodes-in-pairs](https://github.com/DragonFive/Leetcode/blob/master/linked_list/24-swap-nodes-in-pairs.md)
 
 [23-merge-k-sorted-lists](https://github.com/DragonFive/Leetcode/blob/master/linked_list/23-merge-k-sorted-lists.md)
