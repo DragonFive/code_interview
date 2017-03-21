@@ -45,3 +45,7 @@ grammar_cjkRuby: true
         return result;
     }
 ```
+
+# reference
+
+[copy_list_with_random_pointer](https://algorithm.yuanbin.me/zh-hans/linked_list/copy_list_with_random_pointer.htm)
