@@ -28,7 +28,7 @@ grammar_cjkRuby: true
     }
 ```
 
-迭代法
+迭代法 辅助栈
 ```cpp
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> result;
