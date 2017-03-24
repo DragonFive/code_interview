@@ -29,7 +29,7 @@ grammar_cjkRuby: true
     }
 ```
 
-迭代法
+迭代法 + 反序法
 ```cpp
     vector<int> postorderTraversal(TreeNode* root) {
         vector<int> result;
