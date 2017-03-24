@@ -9,7 +9,7 @@ grammar_cjkRuby: true
 [145-binary-tree-postorder-traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/#/description)
 
 # solution
-递归法
+## 递归法
 ```cpp
     vector<int> postorderTraversal(TreeNode* root) {
         vector<int> result;
@@ -29,7 +29,7 @@ grammar_cjkRuby: true
     }
 ```
 
-迭代法 + 反序法
+## 迭代法 + 反序法
 ```cpp
     vector<int> postorderTraversal(TreeNode* root) {
         vector<int> result;
