@@ -53,3 +53,41 @@ grammar_cjkRuby: true
         return result;
     }
 ```
+
+## 迭代法  记录孩子访问过
+
+```cpp
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> result;
+        if (root == NULL)
+            return result;
+        stack<TreeNode *> st;
+        TreeNode *cur = root;
+        TreeNode *pre = NULL;
+        st.push(root);
+        while (!st.empty())
+        {
+            if (!cur->left && !cur->right || pre != NULL && (pre == cur->left || pre == cur->right) )//无左右孩子，或者都访问过；
+            {//则访问当前节点;
+                st.pop();
+                result.push_back(cur->val);
+                pre = cur;
+                if (!st.empty())
+                    cur = st.top();
+            }
+            else
+            {
+                if (cur->right)
+                {
+                    st.push(cur->right);
+                }
+                if (cur->left)
+                {
+                    st.push(cur->left);
+                }
+                cur = st.top();
+            }
+        }
+        return result;
+    }
+```
