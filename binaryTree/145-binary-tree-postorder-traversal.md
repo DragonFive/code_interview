@@ -3,7 +3,7 @@ title: 145-binary-tree-postorder-traversal
 tags: 在河之洲,算法,小书匠
 grammar_cjkRuby: true
 ---
-
+[TOC]
 
 # problem
 [145-binary-tree-postorder-traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/#/description)
