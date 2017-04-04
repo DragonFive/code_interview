@@ -3,6 +3,8 @@ Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
 用python和c++实现的leetcode和lintcode以及geeksForGeeks的题解
 ## 结构
 
+[用栈实现队列和用队列实现栈](http://www.cnblogs.com/xwdreamer/archive/2012/05/03/2480651.html)
+
 ### string 字符串
 28- Implement strStr()  实现找字串功能
 
