@@ -9,6 +9,7 @@ grammar_cjkRuby: true
 [110-balanced-binary-tree](https://leetcode.com/problems/balanced-binary-tree/#/description)
 
 # solution
+递归法
 ```cpp
     bool isBalanced(TreeNode* root) {
         if (helper(root) == -1)
