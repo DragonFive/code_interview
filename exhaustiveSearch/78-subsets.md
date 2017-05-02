@@ -6,7 +6,7 @@ grammar_cjkRuby: true
 
 # problem 
 [78-subsets](https://leetcode.com/problems/subsets/#/description)
-
+求一个集合的所有子集。
 # solution
 
 
