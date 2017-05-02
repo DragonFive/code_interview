@@ -137,9 +137,20 @@ void process_solution(vector<int> &a,int k,int input,vector<vector<int> > & resu
     result.push_back(list);
 }
 ```
+include<iostream>
+using namespace stdl
+int main()
+{
 
+}
 ### 程序流程分析
 
+#include <iostream>
+using namespace std;
+int main()
+{
+return 0;
+}
 
 ### 复杂度分析
 
