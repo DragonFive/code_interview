@@ -47,6 +47,8 @@ void dfs(vector<int> &nums, int pos, vector<int> &list, vector<vector<int>> &res
 # reference
 
 [LeetCode: Subsets 解题报告](http://www.cnblogs.com/yuzhangcmu/p/4211815.html)
+[全面解析回溯法：算法框架与问题求解](http://www.cnblogs.com/wuyuegb2312/p/3273337.html)
+[lecture15-backtracking](http://7xojrx.com1.z0.glb.clouddn.com/docs/algorithm-exercise/docs/lecture15-backtracking.pdf)
 
 
   [1]: https://www.github.com/DragonFive/CVBasicOp/raw/master/1493690746610.jpg
