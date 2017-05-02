@@ -43,6 +43,33 @@ void dfs(vector<int> &nums, int pos, vector<int> &list, vector<vector<int>> &res
 状态数为所有可能的组合数$ O(2^n)$, 生成每个状态所需的时间复杂度近似为$ O(1)$, 如[1] -> [1, 2], 故总的时间复杂度近似为 $O(2^n)$.
 使用了临时空间list保存中间结果，list 最大长度为数组长度，故空间复杂度近似为$ O(n)$.
 
+## 法2：使用位操作的方法
+
+
+```cpp
+vector<vector<int> > subsets( vector<int> & nums )
+{
+    vector<vector<int> > result;
+    if (nums.empty())
+	  return result;
+	long long combinations = pow(2,nums.size());
+	for (long long i = 0; i < combinations; i++)
+	{
+	    vector<int> list;
+	    for (long long j = 0; j < nums.size(); j++)
+	    {
+	        if ((i>>j) & 1) // 这里注意是按位与操作
+	            list.push_back(nums[j]);
+	    }
+	    result.push_back(list);
+	}
+	
+	return result;
+}
+
+```
+
+
 
 # reference
 
