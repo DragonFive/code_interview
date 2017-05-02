@@ -79,7 +79,63 @@ vector<vector<int> > subsets( vector<int> & nums )
 
 ## 法3：走所有回溯法的流程
 ```cpp
+vector<vector<int> > subsets( vector<int> & nums )
+{
+    vector<vector<int> > result;
+    if (nums.empty())
+	  return result;
+	long long combinations = pow(2,nums.size());
+	for (long long i = 0; i < combinations; i++)
+	{
+	    vector<int> list;
+	    for (long long j = 0; j < nums.size(); j++)
+	    {
+	        if ((i>>j) & 1)
+	            list.push_back(nums[j]);
+	    }
+	    result.push_back(list);
+	}
+	
+	return result;
+}
 
+int MAXCANDIDATES = 2;
+void backtrack(vector<int> &a, int k, int input,vector<vector<int> > & result )
+{
+    int c[MAXCANDIDATES]; /*这次搜索的候选 */
+    int ncandidates; /* 候选数目 */
+    int i; /* counter */
+    if (is_a_solution(a,k,input))
+        process_solution(a,k,input,result);
+    else {
+        k = k+1;
+        construct_candidates(a,k,input,c,&ncandidates);
+        for (i=0; i<ncandidates; i++) {
+            a[k] = c[i];
+            backtrack(a,k,input,result);
+        }
+    }
+}
+bool is_a_solution(vector<int> &a, int k , int input)
+{
+    if (k == input)
+        return true;
+    return false;
+}
+void construct_candidates(vector<int> &a,int k,int input,int c[] ,int *ncandidates)
+{
+    c[0] = 0;
+    c[1] = 1;
+    *ncandidates = 2;
+}
+void process_solution(vector<int> &a,int k,int input,vector<vector<int> > & result)
+{
+    vector<int> list;
+    for (int i = 0; i < input; i++)
+        if (a[i] == 1)
+            list.push_back(i);
+    result.push_back(list);
+}
 ```
 
 ### 程序流程分析
@@ -87,7 +143,8 @@ vector<vector<int> > subsets( vector<int> & nums )
 
 ### 复杂度分析
 
-
+总共有$ O(2^n) $ 个数要取，每个数要遍历它所有的位数n，所以时间复杂度为$ O(2^nn) $
+而空间复杂度为$ O(n) $
 # reference
 
 [LeetCode: Subsets 解题报告](http://www.cnblogs.com/yuzhangcmu/p/4211815.html)
