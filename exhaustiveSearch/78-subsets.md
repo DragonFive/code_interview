@@ -7,6 +7,9 @@ grammar_cjkRuby: true
 # problem 
 [78-subsets](https://leetcode.com/problems/subsets/#/description)
 求一个集合的所有子集。
+
+本题的一个变形是[90-subsets-ii](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/78-subsets.md)
+
 # solution
 ## 法1：递归回溯法
 这里可以深入理解一下回溯法是对隐式图的深度优先搜索算法。这是一种遍历所有解决方案树的方式
