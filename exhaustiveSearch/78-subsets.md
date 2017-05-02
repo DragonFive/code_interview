@@ -24,7 +24,7 @@ vector<vector<int> > subsets( vector<int> & nums )
 	return result;
 }
 
-void dfs(vector<int> &nums, int pos, vector<int> &list. vector<vecor<int>> &result)
+void dfs(vector<int> &nums, int pos, vector<int> &list, vector<vector<int>> &result)
 {
     result.push_back(list);
 	for (int i = pos; i < nums.size(); i++)
