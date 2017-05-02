@@ -7,7 +7,7 @@ grammar_cjkRuby: true
 # problem
 
 [90-subsets-ii](https://leetcode.com/problems/subsets-ii/#/description)
-
+求一个集合的不重复的子集。
 本题是[78-subsets](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/78-subsets.md)的变形。 
 
 # solution
