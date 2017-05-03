@@ -140,25 +140,15 @@ void process_solution(vector<int> &a,int k,int input,vector<vector<int> > & resu
     result.push_back(list);
 }
 ```
-include<iostream>
-using namespace stdl
-int main()
-{
 
-}
 ### 程序流程分析
 
-#include <iostream>
-using namespace std;
-int main()
-{
-return 0;
-}
+
 
 ### 复杂度分析
 
 总共有$ O(2^n) $ 个数要取，每个数要遍历它所有的位数n，所以时间复杂度为$ O(2^nn) $
-而空间复杂度为$ O(n) $
+而空间复杂度为$ O(3n) $  因为要建立数组a,C和list
 # reference
 
 [LeetCode: Subsets 解题报告](http://www.cnblogs.com/yuzhangcmu/p/4211815.html)
