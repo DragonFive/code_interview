@@ -12,6 +12,8 @@ grammar_cjkRuby: true
 ## 传统回溯法
 
 使用回溯法解题的关键在于如何确定正确解及排除不符条件的解(**剪枝**)。
+
+construct_candidate 里可以使用hashmap来使得查找的方法从**O(n)**降低到**O(1)**
 ```
 vector<vector<int>> result;
 const int MaxCandidates = 10000;
