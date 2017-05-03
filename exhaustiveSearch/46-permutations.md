@@ -10,6 +10,8 @@ grammar_cjkRuby: true
 # solution
 
 ## 传统回溯法
+
+使用回溯法解题的关键在于如何确定正确解及排除不符条件的解(**剪枝**)。
 ```
 vector<vector<int>> result;
 const int MaxCandidates = 10000;
