@@ -14,7 +14,7 @@ grammar_cjkRuby: true
 使用回溯法解题的关键在于如何确定正确解及排除不符条件的解(**剪枝**)。
 
 construct_candidate 里可以使用hashmap来使得查找的方法从**O(n)** 降低到 **O(1)**
-```
+```cpp
 vector<vector<int>> result;
 const int MaxCandidates = 10000;
 vector<vector<int>> permute(vector<int>& nums) {
@@ -68,7 +68,41 @@ void process_solution(vector<int>& a, vector<int>& nums)
 
 ### 算法复杂度分析
 
-时间复杂度，共有n!中可能取值。时间复杂度为o(n!)，空间复杂度为o(n! + 3n)
+时间复杂度，共有n!中可能取值。时间复杂度为o(n x n!)，空间复杂度为o(n! + 3n)
+
+### 使用比较简单的subsets模板
+
+```cpp
+vector<vector<int>> result;
+vector<vector<int>> permute(vector<int>& nums) {
+	if (nums.empty())
+		return result;
+	vector<int> list;
+	backTracking(nums, list);
+	return result;
+}
+void backTracking(vector<int> & nums, vector<int> &list)
+{
+    if (list.size() == nums.size() )
+    {
+        result.push_back(list);
+        return;
+    }
+    for (int i = 0; i < nums.size(); i++)
+    {
+        if (find(list.begin(), list.end(), nums[i]) == list.end() )
+        {
+            list.push_back(nums[i]);
+            backTracking(nums, list);
+            list.pop_back();
+        }
+    }
+}
+```
+
+### 代码分析
+
+代码比较短，但是时间复杂度跟上面的是一样的。
 
 # reference
 [全面解析回溯法：算法框架与问题求解](http://www.cnblogs.com/wuyuegb2312/p/3273337.html)
