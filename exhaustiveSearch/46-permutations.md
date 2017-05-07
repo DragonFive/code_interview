@@ -188,7 +188,7 @@ vector<vector<int>> permute(vector<int>& nums) {
 
 ### 复杂度分析
 
-时间复杂度为$O(n!)$，空间复杂度很大$ O(n x n!) $
+时间复杂度为$O(n!)$，空间复杂度很大$ O(n * n!) $
 
 # reference
 [全面解析回溯法：算法框架与问题求解](http://www.cnblogs.com/wuyuegb2312/p/3273337.html)
