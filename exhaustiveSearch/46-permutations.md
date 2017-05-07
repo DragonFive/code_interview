@@ -9,7 +9,7 @@ grammar_cjkRuby: true
 
 # solution
 
-## 传统回溯法
+## 传统回溯法模板
 
 使用回溯法解题的关键在于如何确定正确解及排除不符条件的解(**剪枝**)。
 
@@ -70,7 +70,7 @@ void process_solution(vector<int>& a, vector<int>& nums)
 
 时间复杂度，共有n!中可能取值。时间复杂度为o(n x n!)，空间复杂度为o(n! + 3n)
 
-### 使用比较简单的subsets模板
+## 使用比较简单的subsets模板
 
 ```cpp
 vector<vector<int>> result;
@@ -152,9 +152,48 @@ vector<vector<int>> permute(vector<int>& nums) {
 时间复杂度为 $ O(n x n!)$ ，空间复杂度为$ O(1) $
 
 
+## 使用动态规划的方法
+
+```
+vector<vector<int>> permute(vector<int>& nums) {
+    vector<vector<int>> result;   
+	if (nums.empty())
+		return result;
+	if (nums.size() == 1)
+	{
+	    result.push_back(nums);
+	    return result;
+	}
+	sort(nums.begin(), nums.end());
+	//找到一个点单拿出来，其它点排在它后面
+	for (int i = 0; i < nums.size() ; i++)
+	{
+	    vector<int> cur = nums;
+	    cur.erase(cur.begin()+i);
+	    vector<vector<int>> posRes = permute(cur);
+	    //然后把单拿出来的那个点插入到后面元素组成序列的第一个位置;
+	    for (int j = 0; j < posRes.size(); j++)
+	    {
+	        vector<int> tmp = posRes[j];
+	        tmp.insert(tmp.begin(), nums[i]);
+	        result.push_back(tmp);
+	    }
+	}
+	
+	return result;
+}
+```
+### 代码分析
+这个用的是动态规划的方法，比较容易理解
+
+### 复杂度分析
+
+时间复杂度为$O(n!)$，空间复杂度很大$ O(n x n!) $
+
 # reference
 [全面解析回溯法：算法框架与问题求解](http://www.cnblogs.com/wuyuegb2312/p/3273337.html)
 
 [leetcode解析permutations](https://algorithm.yuanbin.me/zh-hans/exhaustive_search/permutations.html)
 
 [[leetcode] permutations的讨论](http://blog.csdn.net/tuantuanls/article/details/8717262)
+
