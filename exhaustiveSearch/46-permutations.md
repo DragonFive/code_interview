@@ -104,6 +104,54 @@ void backTracking(vector<int> & nums, vector<int> &list)
 
 代码比较短，但是时间复杂度跟上面的是一样的。
 
+## 使用字典序版本 C++STL的next_permutation实现
+
+```cpp
+vector<vector<int>> permute(vector<int>& nums) {
+    vector<vector<int>> result;   
+	if (nums.empty())
+		return result;
+	//首先找到最小的值，然后使用字典序，不断开始拓展。
+	sort(nums.begin(), nums.end());
+	result.push_back(nums);
+	for (;;)
+	{
+    	int k = nums.size() - 2;
+    	//先找到最大降序后缀;
+    	for (; k >=0; k--)
+    	{
+    	    if (nums[k]< nums[k+1])
+    	        break;
+    	}
+    	if (k < 0)//说明当前的序列已经是最大的了；
+    	    break;
+    	
+    	// 接下来找到第一个比哨兵大的元素，进行交换；
+    	int i = nums.size() - 1;
+    	for (; i > k; i--)
+    	    if (nums[i] > nums[k])
+    	        break;
+    	int temp = nums[k];
+    	nums[k] = nums[i];
+    	nums[i] = temp;
+    	//接下来进行reverse操作得到字典序的下一个序列;
+        reverse(nums.begin()+k+1, nums.end());
+        result.push_back(nums);
+    	
+	}
+	return result;
+}
+
+```
+
+### 代码分析
+
+每次都找比当前序列稍大的下一个序列
+
+### 复杂度分析
+时间复杂度为 $ O(n x n!)$ ，空间复杂度为$ O(1) $
+
+
 # reference
 [全面解析回溯法：算法框架与问题求解](http://www.cnblogs.com/wuyuegb2312/p/3273337.html)
 
