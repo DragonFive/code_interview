@@ -156,3 +156,5 @@ vector<vector<int>> permute(vector<int>& nums) {
 [全面解析回溯法：算法框架与问题求解](http://www.cnblogs.com/wuyuegb2312/p/3273337.html)
 
 [leetcode解析permutations](https://algorithm.yuanbin.me/zh-hans/exhaustive_search/permutations.html)
+
+[[leetcode] permutations的讨论](http://blog.csdn.net/tuantuanls/article/details/8717262)
