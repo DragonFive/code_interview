@@ -43,5 +43,6 @@ grammar_cjkRuby: true
         }
     }
 ```
-
+## 字典序法
+参见46-permutations
 # reference
