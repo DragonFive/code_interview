@@ -74,6 +74,11 @@ lintcode 138-Subarray-Sum
 [lint88-lowest-common-ancestor](https://github.com/DragonFive/Leetcode/blob/master/binaryTree/lint88-lowest-common-ancestor.md)
 
 
+## 回溯+剪枝 或字典序遍历
+
+[47-permutations-ii](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/47-permutations-ii.md)
+
+[46-permutations](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/46-permutations.md)
 
 
 
