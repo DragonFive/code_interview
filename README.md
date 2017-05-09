@@ -82,7 +82,7 @@ lintcode 138-Subarray-Sum
 
 [90-subsets-ii](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/90-subsets-ii.md)
 
-
+[31-next-permutation](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/31-next-permutation.md)
 
 ```
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26418207&auto=1&height=66"></iframe>
