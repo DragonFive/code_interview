@@ -1,5 +1,5 @@
 ---
-title: 51-previous-permutation
+title: lint-51-previous-permutation
 tags: 新建,模板,小书匠
 grammar_cjkRuby: true
 ---
