@@ -8,6 +8,7 @@ grammar_cjkRuby: true
 # source
 [lint198-permutation-index-ii](http://www.lintcode.com/en/problem/permutation-index-ii/)
 这里需要考虑重复元素，有无重复元素最大的区别在于原来的1!, 2!, 3!...等需要除以重复元素个数的阶乘，颇有点高中排列组合题的味道。
+[lint197-permutation-index](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/lint197-Permutatio-%20Index.md)
 # solution
 
 ```
@@ -31,7 +32,7 @@ grammar_cjkRuby: true
                 {
                     if (sameNum.find(A[i]) == sameNum.end() )
                     {
-                        sameNum[A[i]] == 2;
+                        sameNum[A[i]] = 2;
                         res *= 2;
                     }
                     else
@@ -46,4 +47,6 @@ grammar_cjkRuby: true
     }
 ```
 # reference
+
+
 
