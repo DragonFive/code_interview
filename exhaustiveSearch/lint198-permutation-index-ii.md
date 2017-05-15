@@ -20,30 +20,27 @@ grammar_cjkRuby: true
         for (long long i = A.size() -1 ; i >= 0 ; i--)
         {
             long long rank = 0;
-            bool same = false;
             for (long long j = i+1; j < A.size(); j++)
             {
                 if (A[i] > A[j])
                     rank++;
+            }
+            for (long long j = i+1; j < A.size(); j++)
                 //同时要记录有多少个重复到数字出现;
-                else if (A[i] == A[j] && same == false)
+                if (A[i] == A[j])
                 {
-                    same = true;
                     if (sameNum.find(A[i]) == sameNum.end() )
                     {
-                        sameNum[i] == 2;
+                        sameNum[A[i]] == 2;
                         res *= 2;
                     }
                     else
-                    {
-                        sameNum[i]++;
-                        res *= sameNum[i];
-                    }
+                        res *= (++sameNum[A[i]]);
+                    break;
                 }
-                
-            }
             result += rank * factor / res;
             factor *= (A.size() - i);
+            
         }
         return result;
     }
