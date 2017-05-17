@@ -10,9 +10,9 @@ grammar_cjkRuby: true
 
 ## similiar problem
 
-[]()
+[lint197-Permutatio- Index.md](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/lint197-Permutatio-%20Index.md)
 
-[]()
+[lint198-permutation-index-ii](https://github.com/DragonFive/Leetcode/blob/master/exhaustiveSearch/lint198-permutation-index-ii.md)
 
 # solution
 
