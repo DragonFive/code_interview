@@ -47,7 +47,7 @@ grammar_cjkRuby: true
         copy(perm.begin(), perm.end(), ostream_iterator<int>(result,""));
 ```
 很聪明的做法, ostream_iteator是输出迭代器，构造函数第一个参数是指向一个输出到stream 如cout等，第二个参数表示两个元素之间到分界。
- 
+ [ostream_iterator](http://www.cplusplus.com/reference/iterator/ostream_iterator/ostream_iterator/)
 # reference
 
 [Permutation Sequence 解题报告](http://blog.sina.com.cn/s/blog_eb52001d0102v1ss.html)
