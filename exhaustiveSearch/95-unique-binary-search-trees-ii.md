@@ -5,6 +5,9 @@ grammar_cjkRuby: true
 ---
 # problem
 [95-unique-binary-search-trees-ii](https://leetcode.com/problems/unique-binary-search-trees-ii/#/description)
+## similiar problem
+
+[96-Unique-Binary-Search-Trees](https://github.com/DragonFive/Leetcode/blob/master/bitMani/96-Unique-Binary-Search-Trees.md)
 
 # solution
 
