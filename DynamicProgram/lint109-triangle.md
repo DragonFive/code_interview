@@ -9,7 +9,7 @@ grammar_cjkRuby: true
 [lint109-triangle](http://www.lintcode.com/en/problem/triangle/)
 
 # solution
-## 解法1,自上而下递归法，会导致超时
+## 解法1,自上而下递归法
 ```
     int minimumTotal(vector<vector<int> > &triangle) {
         // write your code here
@@ -26,4 +26,10 @@ grammar_cjkRuby: true
         return left < right ? triangle[i][j] + left : triangle[i][j] + right;  
     }
 ```
+### analysis
+
+因为递归导致重复计算，所以会导致超时
+
+
+
 
