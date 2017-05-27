@@ -38,7 +38,7 @@ grammar_cjkRuby: true
             return 0;
         vector<vector<int> > nums;
         for (int i = 0; i < triangle.size() - 1; i++)
-            nums.push_back(vector<int>(triangle[i].size(), 0) );
+            nums.push_back(vector<int>(triangle[i].size(), INT_MIN) );
         return dfs(triangle, 0, 0, nums);
     }
     int dfs(vector<vector<int> > &triangle, int i, int j,vector<vector<int> > &nums)
@@ -53,7 +53,7 @@ grammar_cjkRuby: true
     }
 ```
 ### analysis
-通过率53%,依然会超时 ,total runtime 1305ms
+会通过计算。
 
 ## 解法3.用循环就能通过
 ```
