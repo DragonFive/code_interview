@@ -55,6 +55,30 @@ grammar_cjkRuby: true
 ### analysis
 通过率53%,依然会超时 ,total runtime 1305ms
 
+## 解法3.用循环就能通过
+```
+    int minimumTotal(vector<vector<int> > &triangle) {
+        // write your code here
+        if (triangle.empty())
+            return 0;
+        vector<vector<int> > nums;
+        for (int i = 0; i < triangle.size() ; i++)
+            nums.push_back(vector<int>(triangle[i].size(), 0) );
+        for (int i = 0; i < nums[nums.size()-1].size(); i++)
+            nums[nums.size()-1][i] = triangle[nums.size()-1][i];
+        //从下往上算一遍;
+        for (int i = triangle.size()-2; i >= 0;i --)
+        {
+            for (int j = 0; j < nums[i].size(); j ++)
+                nums[i][j] = nums[i+1][j] < nums[i+1][j+1]?nums[i+1][j]+triangle[i][j]:nums[i+1][j+1]+triangle[i][j];
+        }
+        return nums[0][0];
+    }
+```
+
+### analysis
+但是依然是全部遍历后打结果，不太智能. 
+
 
 
 
