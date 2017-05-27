@@ -45,7 +45,7 @@ grammar_cjkRuby: true
     {
         if (i == triangle.size() - 1)//最后一行;
             return triangle[i][j];
-        if (nums[i][j] > 0) return nums[i][j];
+        if (nums[i][j] ！= INT_MIN) return nums[i][j];
         int left = dfs(triangle, i + 1, j, nums);
         int right = dfs(triangle, i + 1, j+1, nums);
         nums[i][j] = left < right ? triangle[i][j] + left : triangle[i][j] + right;  
