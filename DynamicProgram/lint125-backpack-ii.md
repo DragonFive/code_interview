@@ -12,6 +12,8 @@ grammar_cjkRuby: true
 ```
     int backPackII(int m, vector<int> A, vector<int> V) {
         // write your code here
+        if (A.empty() || V.empty() || m<1)
+            return 0;
         vector<int> result(m+1, 0);
         int len = A.size();
         for (int i = 0; i< len; i++)
