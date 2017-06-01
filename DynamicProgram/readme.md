@@ -1,7 +1,7 @@
 这些是动态规划的题目
 
 # 背包问题
-	[背包九讲](http://love-oriented.com/pack/pack2rc.pdf)
+[背包九讲](http://love-oriented.com/pack/pack2rc.pdf)
 
 ## 0-1背包初始化
 
