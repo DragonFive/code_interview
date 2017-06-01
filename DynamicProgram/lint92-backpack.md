@@ -48,3 +48,8 @@ grammar_cjkRuby: true
         
     }
 	```
+	
+	# reference
+	
+	[背包九讲](http://love-oriented.com/pack/pack2rc.pdf)
+	
