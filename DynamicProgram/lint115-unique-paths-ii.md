@@ -9,6 +9,8 @@ grammar_cjkRuby: true
 [lint115-unique-paths-ii](http://www.lintcode.com/en/problem/unique-paths-ii/)
 
 # solution
+
+注意初始化
 ```cpp
     int uniquePathsWithObstacles(vector<vector<int> > &obstacleGrid) {
         // write your code here
