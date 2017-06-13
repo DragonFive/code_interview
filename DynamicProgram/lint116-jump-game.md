@@ -9,7 +9,7 @@ grammar_cjkRuby: true
 [lint116-jump-game](http://www.lintcode.com/en/problem/jump-game/)
 
 # solution
-
+## solution1, 自顶向下
 ```cpp
     bool canJump(vector<int> A) {
         // write you code here
@@ -30,6 +30,27 @@ grammar_cjkRuby: true
             if (maxPos >= A.size() - 1)
                 return true;
             
+        }
+        return true;
+    }
+```
+
+## solution2. 更规范的自顶向下
+
+```cpp
+    bool canJump(vector<int> A) {
+        // write you code here
+        if (A.empty())
+            return true;
+        vector<bool> status(false, A.size());
+        status[0] = true;
+        int farest = A[0];
+        for (int i = 1; i < A.size(); i++)
+        {
+            if (i > farest)
+                return false;
+            if (A[i] + i > farest)
+                farest = A[i] + i;
         }
         return true;
     }
