@@ -55,3 +55,22 @@ grammar_cjkRuby: true
         return true;
     }
 ```
+
+## solution3. 自底向上法
+
+```cpp
+    bool canJump(vector<int> A) {
+        // write you code here
+        if (A.empty())
+            return true;
+        int last = A.size() - 1;
+        for (int i = A.size() -2 ; i>=0 ; i--)
+        {
+            if (i+A[i] >= last)
+            {
+                last = i;
+            }
+        }
+        return last == 0;
+    }
+```
