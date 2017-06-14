@@ -8,6 +8,7 @@ grammar_cjkRuby: true
 # problem
 [300-longest-increasing-subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description)
 # solution
+## solution 1 DP
 转移矩阵先把问题转换成以这个点结束的最长递增子序列，在最后的时候遍历所有的节点，找到最长的长度
 ```cpp
     int lengthOfLIS(vector<int>& nums) {
@@ -32,7 +33,27 @@ grammar_cjkRuby: true
         return maxLen;
     }
 ```
+## solution2 lower bound
 
+[longest_increasing_subsequence](https://algorithm.yuanbin.me/zh-hans/dynamic_programming/longest_increasing_subsequence.html)
+
+```cpp
+    int lengthOfLIS(vector<int>& nums) {
+        if (nums.empty()) return 0;
+
+        vector<int> lis;
+        for (int i = 0; i < nums.size(); ++i) {
+            vector<int>::iterator it = lower_bound(lis.begin(), lis.end(), nums[i]);
+            if (it == lis.end()) {
+                lis.push_back(nums[i]);
+            } else {
+                *it = nums[i];
+            }
+        }
+
+        return lis.size();
+    }
+```
 
 # reference
 
