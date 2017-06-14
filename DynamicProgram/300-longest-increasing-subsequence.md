@@ -22,7 +22,7 @@ grammar_cjkRuby: true
             for (int j = 0 ; j < i; j ++)
                 if (nums[i] > nums[j] && lens[j] > bigger)
                     bigger = lens[j];
-            lens[i] = bigger + 1;
+            lens[i] = bigger + 1;//这里设置的比较巧妙，当i是递增序列中的第一个元素的时候，依然是成立的
         }
         //找到lens数组中的最大值;
         int maxLen = 0;
