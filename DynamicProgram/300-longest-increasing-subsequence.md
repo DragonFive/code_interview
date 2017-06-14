@@ -8,6 +8,7 @@ grammar_cjkRuby: true
 # problem
 [300-longest-increasing-subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description)
 # solution
+转移矩阵先把问题转换成以这个点结束的最长递增子序列，在最后的时候遍历所有的节点，找到最长的长度
 ```cpp
     int lengthOfLIS(vector<int>& nums) {
         if (nums.empty() || nums.size() == 0)
