@@ -32,3 +32,8 @@ grammar_cjkRuby: true
         return maxLen;
     }
 ```
+
+
+# reference
+
+[c++的新特性](http://blog.csdn.net/wangshubo1989/article/details/50575008)
