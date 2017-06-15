@@ -25,3 +25,22 @@ time out
         return *max_element(result.begin(),result.end());
     }
 ```
+
+## solution 2. Dp
+```cpp
+    int maxProfit(vector<int>& prices) {
+        if (prices.empty())
+            return 0;
+        vector<int> result(prices.size(),0);
+        int min_elem = 0;
+        for (int i = 1; i < prices.size(); i++)
+        {
+            if (prices[i] > prices[min_elem])
+                result[i] = result[min_elem] + prices[i] - prices[min_elem];
+            else
+                min_elem = i;
+        }
+        return *max_element(result.begin(),result.end());
+    }
+
+```
