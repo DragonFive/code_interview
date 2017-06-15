@@ -27,6 +27,7 @@ time out
 ```
 
 ## solution 2. Dp
+使用坐标记录最小值;
 ```cpp
     int maxProfit(vector<int>& prices) {
         if (prices.empty())
