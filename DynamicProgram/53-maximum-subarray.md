@@ -30,7 +30,7 @@ grammar_cjkRuby: true
 ### 代码分析
 这里使用了辅助空间，空间复杂度为0(n);
 
-## 贪心算法
+## 贪心算法 不用辅助空间
 
 ```cpp
     int maxSubArray(vector<int>& nums) {
