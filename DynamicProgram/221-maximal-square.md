@@ -8,6 +8,7 @@ grammar_cjkRuby: true
 # problem
 [221-maximal-square](https://leetcode.com/problems/maximal-square/#/description)
 # solution
+最粗糙的方法，复杂度比较高，但是空间复杂度低; 
 ```cpp
     int maximalSquare(vector<vector<char>>& matrix) {
         //对每一个点记忆从它出发的max值，如果不符合就算了，符合的话;
