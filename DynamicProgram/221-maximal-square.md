@@ -79,3 +79,38 @@ grammar_cjkRuby: true
             return maxSize*maxSize;
     }
 ```
+
+## solution3 动态规划+单维数组
+
+```cpp
+    int maximalSquare(vector<vector<char>>& matrix) {
+        //对每一个点记忆从它出发的max值，如果不符合就算了，符合的话;
+            if (matrix.empty() || matrix[0].size() == 0)
+                return 0;
+            int m = matrix.size(), n = matrix[0].size();
+            int maxSize = 0;
+            vector<int> result(n, 0);
+            for (int i = 0; i < n; i++)
+                if (matrix[0][i] == '1')
+                {
+                    result[i] = 1;maxSize = 1;
+                }
+            for (int i = 1; i < m; i++)
+            {
+                int pre = result[0];
+                result[0] = matrix[i][0] == '1'?1:0;
+                maxSize = max(result[0], maxSize);
+                for (int j = 1; j < n; j++)
+                {
+                    int temp = result[j];
+                    if (matrix[i][j] == '1')
+                        result[j] = min(min(pre, result[j]),result[j-1])+1;
+                    else
+                        result[j] = 0;
+                    maxSize = max(maxSize, result[j]);
+                    pre = temp;
+                }
+            }
+            return maxSize*maxSize;
+    }
+```
