@@ -79,6 +79,9 @@ grammar_cjkRuby: true
             return maxSize*maxSize;
     }
 ```
+### code analysis
+
+时间复杂度为O(mn),空间复杂度为O(nm)
 
 ## solution3 动态规划+单维数组
 
@@ -114,3 +117,6 @@ grammar_cjkRuby: true
             return maxSize*maxSize;
     }
 ```
+### code analysis
+
+时间复杂度为O(mn),空间复杂度为O(n)
