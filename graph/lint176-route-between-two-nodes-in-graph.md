@@ -50,3 +50,35 @@ grammar_cjkRuby: true
 除了深搜处理邻居节点，我们也可以采用 BFS 结合队列处理，优点是不会爆栈，缺点是空间复杂度稍高和实现复杂点。
 
 
+```cpp
+    bool hasRoute(vector<DirectedGraphNode*> graph,
+                  DirectedGraphNode* s, DirectedGraphNode* t) {
+        // write your code here
+        if (graph.empty())
+            return false;
+        unordered_set<DirectedGraphNode* > visited;//记录某个点有没有visited过;
+        
+        //vector<DirectedGraphNode *> ng = s->neighbors;
+        
+        queue<DirectedGraphNode* > nodeq;
+        nodeq.push(s);
+        while (nodeq.empty())
+        {
+            DirectedGraphNode* pos = nodeq.front();
+            nodeq.pop();
+            visited.insert(pos);
+            if (pos == t)
+                return true;
+            vector<DirectedGraphNode *> ng = pos->neighbors;
+            for (int i = 0; i < ng.size(); i++)
+            {
+                if (visited.find(ng[i]) != visited.end() )
+                    continue;
+                nodeq.push(ng[i]);
+            }
+        }
+        return false;
+        
+    }
+```
+
