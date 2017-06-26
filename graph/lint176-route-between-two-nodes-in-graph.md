@@ -62,7 +62,7 @@ grammar_cjkRuby: true
         
         queue<DirectedGraphNode* > nodeq;
         nodeq.push(s);
-        while (nodeq.empty())
+        while (!nodeq.empty())
         {
             DirectedGraphNode* pos = nodeq.front();
             nodeq.pop();
