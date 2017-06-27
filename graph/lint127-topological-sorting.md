@@ -8,6 +8,8 @@ grammar_cjkRuby: true
 # problem
 [lint127-topological-sorting](http://www.lintcode.com/en/problem/topological-sorting/#)
 
+这个问题最大的点在于图可能有两个根节点。
+
 # solution
 ```cpp
     vector<DirectedGraphNode*> topSort(vector<DirectedGraphNode*> graph) {
