@@ -29,6 +29,7 @@ grammar_cjkRuby: true
             }
         }
         //找到不在map里面的那些点;
+        queue<DirectedGraphNode *> q;
         DirectedGraphNode * root = NULL;
         for (int i = 0; i < graph.size(); i++)
         {
@@ -36,13 +37,14 @@ grammar_cjkRuby: true
             {
                 root = graph[i];
                 in_degree[root] = 0;
+                q.push(root);
             }
         }
         if (root == NULL)
             return result;
         //下面开始bfs,定各个节点的深度;
-        queue<DirectedGraphNode *> q;
-        q.push(root);
+        
+        
         while (!q.empty())
         {
             DirectedGraphNode * cur_node = q.front();
