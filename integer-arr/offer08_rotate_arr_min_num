@@ -1,0 +1,27 @@
+# source
+[剑指offer08旋转数组中的最小值](https://www.nowcoder.com/practice/9f3231a991af4f55b95579b44b7a01ba?tpId=13&tqId=11159&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)
+
+# solution
+二分查找
+```cpp
+
+    int minNumberInRotateArray(vector<int> rotateArray) {
+        if (rotateArray.empty())
+            return 0;
+        int len = rotateArray.size();
+        if (rotateArray[0] < rotateArray[len-1])
+            return rotateArray[0];
+        //下面使用二分查找法;
+        int i = -1, j = len;
+        while (i + 1 < j){
+            int mid = i+(j-i)/2;
+            if (rotateArray[mid] < rotateArray[mid-1])
+                return rotateArray[mid];
+            if (rotateArray[mid]< rotateArray[0])
+                j = mid;
+            else
+                i =mid;
+        }
+        return 0;
+    }
+```
