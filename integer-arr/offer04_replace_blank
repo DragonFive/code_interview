@@ -1,0 +1,31 @@
+
+# source
+[牛客：空格替换](https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=13&tqId=11154&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+# solution
+```cpp
+	void replaceSpace(char *str,int length) {
+		if (str == NULL || length == 0)
+            return ;
+        //先计算最终的长度;
+        int len = 0;
+        for (int i = 0; i < length; i++){
+            len++;
+            if (str[i] == ' ')
+                len = len + 2;
+        }
+        for (int j = len-1, k = length-1; j >= 0 ;j--, k--){
+            if (str[k] == ' '){
+                str[j--] = '0';
+                str[j--] = '2';
+                str[j] = '%';
+            }else{
+                str[j] = str[k];
+            }
+            
+                
+        }
+        return ;
+	}
+```
+
