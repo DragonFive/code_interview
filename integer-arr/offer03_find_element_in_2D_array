@@ -1,0 +1,29 @@
+
+
+# source
+[牛客网：二维数组中的查找](https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=13&tqId=11154&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
+# solutions
+```cpp
+class Solution {
+public:
+    bool Find(int target, vector<vector<int> > array) {
+        //从右下角开始算;
+        if (array.empty() || array[0].empty())
+            return false;
+        int w = array[0].size();
+        int h = array.size();
+        int i = 0, j = w - 1;
+        while ( i >= 0 && i< h && j>=0 && j<w ){
+        	if (array[i][j] == target)
+                return true;
+            if (array[i][j] > target){
+                j--;
+            }else{
+                i++;
+            }
+        }
+        return false;
+    }
+};
+```
