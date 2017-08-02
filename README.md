@@ -1,6 +1,13 @@
 # code_interview
 
+[这里包含了leetcode和lintcode的一些题目的解法](https://github.com/DragonFive/code_interview)
+
 [sword_to_offer是剑指offer](https://github.com/DragonFive/code_interview/tree/master/sword_to_offer)
+
+
+[code_interview是面试中遇到的有意思的题目总结](https://github.com/DragonFive/code_interview/tree/master/code_interview)
+
+
 
 ## Leetcode
 Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
