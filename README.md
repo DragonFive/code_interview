@@ -2,12 +2,12 @@
 
 [**这里包含了**](https://github.com/DragonFive/code_interview)leetcode和lintcode的一些题目的解法
 
-[sword_to_offer是剑指offer](https://github.com/DragonFive/code_interview/tree/master/sword_to_offer)
+[**sword_to_offer**](https://github.com/DragonFive/code_interview/tree/master/sword_to_offer)是剑指offer
 
 
-[code_interview是面试中遇到的有意思的题目总结](https://github.com/DragonFive/code_interview/tree/master/code_interview)
+[**code_interview**](https://github.com/DragonFive/code_interview/tree/master/code_interview)是面试中遇到的有意思的题目总结
 
-[improve_sort_algorithm包含了对传统排序算法的改进和应用总结](https://github.com/DragonFive/code_interview/tree/master/improve_sort_algorithm)
+[**improve_sort_algorithm**](https://github.com/DragonFive/code_interview/tree/master/improve_sort_algorithm)包含了对传统排序算法的改进和应用总结
 
 ## Leetcode
 Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
