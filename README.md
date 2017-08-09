@@ -1,6 +1,6 @@
 # code_interview
 
-[这里包含了leetcode和lintcode的一些题目的解法](https://github.com/DragonFive/code_interview)
+[**这里包含了**](https://github.com/DragonFive/code_interview)leetcode和lintcode的一些题目的解法
 
 [sword_to_offer是剑指offer](https://github.com/DragonFive/code_interview/tree/master/sword_to_offer)
 
