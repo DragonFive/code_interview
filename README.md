@@ -7,7 +7,7 @@
 
 [code_interview是面试中遇到的有意思的题目总结](https://github.com/DragonFive/code_interview/tree/master/code_interview)
 
-
+[improve_sort_algorithm包含了对传统排序算法的改进和应用总结](https://github.com/DragonFive/code_interview/tree/master/improve_sort_algorithm)
 
 ## Leetcode
 Python / C++ 11 Solutions LeetCode Questions  and Some of LintCode Questions.
