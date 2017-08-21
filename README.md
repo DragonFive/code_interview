@@ -5,7 +5,7 @@
 [**sword_to_offer**](https://github.com/DragonFive/code_interview/tree/master/sword_to_offer)是剑指offer
 
 
-[**code_interview**](https://github.com/DragonFive/code_interview/tree/master/code_interview)是面试中遇到的有意思的题目总结
+[**code_interview**](https://github.com/DragonFive/code_interview/tree/master/code_interview)是面试中遇到的有意思的题目总结，比如说BAT，intel，NVIDIA等公司面试的题目记录
 
 [**improve_sort_algorithm**](https://github.com/DragonFive/code_interview/tree/master/improve_sort_algorithm)包含了对传统排序算法的改进和应用总结
 
