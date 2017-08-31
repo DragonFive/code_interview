@@ -7,6 +7,7 @@
 
 3. 已知能等概率输出[0,3）的rand3函数，求实现rand5函数等概率输出[0,5)
 
+[随机数生成器](http://blog.csdn.net/yiqiangeliyou/article/details/46823595)
 
 4. vector  list, set, unordered_set，dequeue等的基本数据结构和操作的时间复杂度
 
